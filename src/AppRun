@@ -42,7 +42,7 @@ fi
 # wechat-beta only support xcb
 BWRAP_ENV_APPEND="--setenv QT_QPA_PLATFORM xcb "
 if [ -z ${QT_IM_MODULE} ]; then
-	BWRAP_ENV_APPEND="${BWRAP_ENV_APPEND} --setenv QT_IM_MODULE fcitx"
+	BWRAP_ENV_APPEND="${BWRAP_ENV_APPEND} --setenv QT_IM_MODULE ibus"
 fi
 if [ -z ${GTK_USE_PORTAL} ]; then
 	BWRAP_ENV_APPEND="${BWRAP_ENV_APPEND} --setenv GTK_USE_PORTAL 1"
